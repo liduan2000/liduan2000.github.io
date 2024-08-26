@@ -1,7 +1,8 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./css/main.css -o ./css/output.css --watch"
+    "dev": "tailwindcss -i ./css/main.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/main.css -o ./css/output.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"

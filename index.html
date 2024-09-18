@@ -347,16 +347,23 @@
               Software Development Engineer - Intern
             </div>
             <ul class="list-disc px-4">
-              <li>Responsible for the upgrade of the architecture for Tencent Games' overseas distribution account
-                system. Evaluated various service meshes (Consul, Zookeeper, Eureka, Etcd, etc.) and selected Consul for
-                unified service registration, discovery, and health checks across CVM and Kubernetes environments.</li>
-              <li>Revamped Tencent's load balancing and service discovery framework and configuration center, enabling
-                real-time updates of Consul route tables to shared memory and integration with the configuration center
-                agent. Handled solution evaluation, development and testing, deployed in CVM and Kubernetes
-                environments.</li>
-              <li>Develop a protection strategy for sensitive interfaces. Use mTLS HTTPS authentication on load
-                balancers for TCC, AWS, GCP, and Azure to replace manual IP whitelisting. Test mTLS authentication,
-                certificate revocation, periodic rotation, and multiple certificate chains.</li>
+              <li>Responsible for the architecture development and upgrade of the Tencent Games Overseas Account
+                Distribution System. Conducted an in-depth investigation into the advantages and disadvantages of
+                various distributed frameworks (Nacos, Consul, Zookeeper, Eureka, Etcd, etc.) and selected Consul to
+                implement unified service registration and discovery across both CVM and Kubernetes architectures.
+                Utilized Consul KV for storing service configuration, routing, and weight information.</li>
+              <li>Redesigned Tencent's self-developed load balancing and service discovery framework, as well as the
+                configuration center agent, to adapt to the account system’s configuration center and overall
+                architecture. Implemented real-time updates of routing information stored in Consul to the configuration
+                center agent, shared memory, and subsequently loading it into the load balancing and service discovery
+                agent. Led solution evaluation, development, self-testing, and benchmark testing, resulting in
+                successful deployment across both CVM and Kubernetes environments.</li>
+              <li>Designed a protection strategy for sensitive interfaces, implementing mTLS(HTTPS mutual
+                authentication) on load balancers in TCC, AWS, GCP, and Azure, replacing manual IP whitelisting. Tested
+                the functionalities of mTLS, certificate revocation, periodic certificate rotation, and
+                multi-certificate chains. Additionally, developed a backup strategy by leveraging Cloud LB to forward
+                Layer 4 requests to an Nginx server, where mTLS functionalities were configured on Nginx to enable
+                mutual authentication.</li>
             </ul>
           </div>
         </div>
@@ -402,12 +409,14 @@
             </div>
 
             <ul class="list-disc px-4">
-              <li>Constructed a Linux kernel space device management driver and a user space device simulator. Led the
-                formulation of schemes, designed architecture, implemented modules, and conducted integration testing.
-                Ensured the stable operation of the driver on the next-generation Server CPU (GNR).</li>
-              <li>Optimized data parallel algorithms in Intel's high-performance GPU architecture using SYCL. Proposed
-                an effective enhancement scheme for the next-generation PVC GPU compiler, reducing the running time of
-                the original parallel algorithm on PVC GPU by nearly ten times.</li>
+              <li>Developed a Linux kernel-space device management driver and a user-space device simulator (C/C++),
+                using interrupts to verify the behavior of the device simulator. Led solution formulation, architecture
+                design, module development, and integration testing. Ensured stable operation of the driver on
+                next-generation server CPUs (GNR).</li>
+              <li>Optimized data-parallel algorithms for Intel's high-performance GPU architecture using oneAPI,
+                rewriting portions of the parallel algorithms with SYCL (C++). Achieved a 5 to 10-fold reduction in
+                runtime for previously cross-platform parallel algorithms on PVC GPUs. Based on the assembly code of the
+                parallel algorithms, proposed effective improvements for the next-generation PVC GPU compiler.</li>
               <li>Responsible for functional testing of BIOS architecture and RAS modules. Designed test cases for BIOS
                 architecture upgrades targeting next-next-generation CPUs (DMR), using the Simics simulation platform to
                 cover both software simulation and hardware integration environments.</li>
@@ -430,13 +439,15 @@
             </div>
 
             <ul class="list-disc px-4">
-              <li>Contributed to developing microservice modules for the Cloud Microenterprise Open Platform and Voice
-                Assistant, using trpc-go for inter-service communication and integrating protocols for voice
-                recognition, semantic analysis, and synthesis to deliver intelligent voice services.
+              <li>Contributed to the development of the Cloud Xiaowei Open Platform and voice assistant microservice
+                modules, utilizing the trpc-go framework for service communication. Developed protocol integrations for
+                speech recognition, semantic parsing, and speech synthesis modules. Additionally, managed Redis data
+                migration and cluster deployment.
               </li>
-              <li>Refactored the sports open capability module from C++ to Go services. Led the Blind Programmer
-                Project, coordinating with company representatives to provide simplified API cloud development tutorials
-                and gather feedback on blind support for the Cloud Microenterprise Open Platform.</li>
+              <li>Refactored the sports open capability module from C++ to Go services. Spearheaded the project for
+                visually impaired programmers, coordinating with company representatives to provide Python cloud
+                development tutorials on the open platform, while gathering feedback on accessibility support for the
+                Cloud Xiaowei Open Platform.</li>
             </ul>
           </div>
         </div>
@@ -456,8 +467,9 @@
             </div>
 
             <ul class="list-disc px-4">
-              <li>Developed and optimized a lightweight JavaScript compilation engine backend for the Taobao app,
-                handling instruction bytecode and JIT compilation modules.
+              <li>Developed a lightweight JavaScript compilation engine backend for the Taobao app, focusing on
+                optimizing performance. Led the development of instruction bytecode and JIT compilation modules, driving
+                improvements in execution speed and resource efficiency.
               </li>
               <li>Directed the development of the file clean-up module for online bypass repair, overseeing the
                 processing of handheld local and platform-delivered files in real-time, aligning with dynamic business

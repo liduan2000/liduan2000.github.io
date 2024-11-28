@@ -148,15 +148,14 @@
         About Me
       </div>
       <p class="scroll-fade-in opacity-0 text-sm sm:text-base">
-        My name is Li Duan, a software developer mainly focus on backend development, I dream to be a full stack
-        software engineer and achieve legendary status in the realm of software craftsmanship. My journey has taken me
-        through the fascinating realms of Microservices, Service Mesh, Distributed systems, Linux system design, GPU
+        My name is Li Duan, a software developer mainly focus on backend development. My journey has taken me
+        through the fascinating realms of microservices, distributed systems, Linux system development, GPU
         parallel
         algorithms, and the captivating world of computer vision with deep learning. I love crafting clean, structured
         code and always eager to explore new technologies and stay updated with latest tech trends. Let's create
         something awesome together!
       </p>
-      <a href="./file/NUS-Li Duan.pdf" download
+      <a href="./file/NUS-DuanLi.pdf" download
         class="scroll-fade-in opacity-0 mt-4 sm:mt-10 duration-300 border-black px-4 border-2 rounded-lg items-center relative inline-flex gap-x-2 text-xs sm:text-sm font-semibold hover:bg-green-300 hover:text-white hover:border-green-300 hover:text-white">
         Download full resume
         <i class="text-3xl uil uil-folder-download"></i>
@@ -190,20 +189,22 @@
             <img class="size-10 lg:size-14" src="./assets/go.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/html.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/css.svg" alt="">
+            <img class="size-10 lg:size-14" src="./assets/linux.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/git.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/spring.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/springboot.svg" alt="">
-            <img class="size-10 lg:size-14" src="./assets/mybatis.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/mysql.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/postgresql.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/redis.svg" alt="">
+            <img class="size-10 lg:size-14" src="./assets/mongodb.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/docker.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/kubernetes.svg" alt="">
-            <img class="size-10 lg:size-14" src="./assets/linux.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/nginx.svg" alt="">
+            <img class="size-10 lg:size-14" src="./assets/restapi.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/hadoop.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/spark.svg" alt="">
             <img class="size-10 lg:size-14" src="./assets/kafka.svg" alt="">
+            <img class="size-10 lg:size-14" src="./assets/mybatis.svg" alt="">
           </div>
         </div>
       </div>
@@ -274,9 +275,10 @@
             <ul class="list-disc px-4">
               <li>
                 Required courses include Computer System Architecture, Data Structures and Algorithms, Enterprise System
-                Architecture, and Artificial Intelligence. Advanced courses cover topics such as Big Data Systems in
-                Data Science, Database Modeling, Real-Time Stream Processing, Software Engineering on Application
-                Architecture, Financial Technology Solutions, Information Visualization and Digital Engagement.
+                Architecture, Software Engineering on Application Architecture and Artificial Intelligence. Advanced
+                courses cover topics such as Big Data Systems in Data Science, Database Modeling and Programming,
+                Real-Time Stream Processing, Financial Technology Solutions, Information Visualization and Digital
+                Engagement.
               </li>
             </ul>
           </div>
@@ -305,7 +307,7 @@
                 point Cloud.
               </li>
               <li>
-                The software-related courses include Programming and Algorithm Language, Data Structures, Data
+                The software-related courses include C++ Programming, Data Structures and Algorithms, Data
                 Statistical
                 Analysis, Network Information Programming, Data Mining, Microcomputer Systems and Interfaces, Embedded
                 Systems and Course Design, and Comprehensive Design of Digital Image Processing Systems.
@@ -341,28 +343,40 @@
               May 2024 → Sep 2024
             </span>
             <div class="flex justify-between text-xl sm:text-2xl font-outfit font-semibold">
-              Tencent Games - Level Infinite, Singapore
+              Tencent Games, Singapore
             </div>
             <div class="pb-1 sm:pb-4 text-base font-outfit font-semibold">
               Software Development Engineer - Intern
             </div>
             <ul class="list-disc px-4">
               <li>Responsible for the architecture development and upgrade of the <b>Tencent Games Overseas Account
-                Distribution System</b>. Conducted an in-depth investigation into the advantages and disadvantages of
-                various <b>distributed frameworks (Nacos, Consul, Zookeeper, Eureka, Etcd, etc.)</b> and selected Consul to
-                implement unified service registration and discovery across both CVM and Kubernetes architectures.
-                Utilized Consul KV for storage of service configuration, routing, and weight information.</li>
-              <li>Redesigned Tencent's self-developed <b>load balancing and service discovery framework, as well as the
-                configuration center agent</b>, to adapt to the account system's configuration center and overall
-                architecture. Implemented <b>real-time updates of routing information</b> stored in Consul to the configuration
-                center agent, shared memory, and subsequently loading it into the load balancing and service discovery
-                agent. Led solution evaluation, development, self-testing, and benchmark testing, resulting in
-                successful deployment across both CVM and Kubernetes environments.</li>
-              <li>Designed a protection strategy for sensitive interfaces, <b>implementing mTLS(HTTPS mutual
-                authentication) on load balancers in TCC, AWS, GCP, and Azure, replacing manual IP whitelisting</b>. Tested
+                  Distribution System</b>. Conducted an in-depth investigation into the advantages and disadvantages of
+                various <b>distributed frameworks (Nacos, Consul, Zookeeper, Eureka, Etcd, etc.)</b> and
+                <b>strategically
+                  selected Consul</b>
+                to
+                implement <b>unified service registration, discovery, health check and service mesh(sidecar proxy)</b>
+                across
+                both ECS and Kubernetes environments.
+                Utilized Consul KV for storage of service configuration, routing, and weight information.
+              </li>
+              <li><b>Redesigned</b> Tencent's self-developed <b>load balancing agent and configuration agent</b>,
+                <b>focusing on
+                  high-performance, low-latency operations</b>, to adapt to
+                the account system's configuration center and overall
+                architecture. Implemented <b>a multithreaded mechanism real-time updates of configuration and routing
+                  data</b> stored in Consul to the
+                configuration
+                center agent, shared memory, and subsequently loading it into the load balancing
+                agent. <b>Led solution evaluation, development, self-testing, and benchmark testing.</b>
+                Successfully deployed across both ECS and Kubernetes environments.
+              </li>
+              <li>Designed a protection strategy for sensitive interfaces, <b>implemented mTLS(HTTPS mutual
+                  authentication) on load balancers in TCC, AWS, GCP, and Azure, replacing manual IP whitelisting</b>.
+                Tested
                 the functionalities of mTLS, certificate revocation, periodic certificate rotation, and
-                multi-certificate chains. Additionally, developed a backup strategy by leveraging Cloud LB to forward
-                Layer 4 requests to an Nginx server, where mTLS functionalities were configured on Nginx to enable
+                multi-certificate chains. Additionally, developed a <b>backup strategy by leveraging Cloud LB to forward
+                  Layer 4 requests to an Nginx server</b>, where mTLS functionalities were configured on Nginx to enable
                 mutual authentication.</li>
             </ul>
           </div>
@@ -383,9 +397,12 @@
             </div>
 
             <ul class="list-disc px-4">
-              <li>Researched content management systems and <b>developed a new Umbraco CMS microservice from scratch</b> within
-                the microservices-based MAS financial trading management platform, customized to use MS SQL Server.
-                Provided essential content management functionality for other business modules in the ecosystem.</li>
+              <li>Developed and implemented a <b>customized Umbraco Content Management System (CMS)</b> tailored for
+                financial
+                business management, <b>featuring MySQL integration and advanced access control.</b> The solution
+                provided
+                seamless content management capabilities for other modules within the platform and was successfully
+                deployed in the latest release of the financial management system, now fully operational.</li>
             </ul>
           </div>
         </div>
@@ -409,14 +426,19 @@
             </div>
 
             <ul class="list-disc px-4">
-              <li>Developed a <b>Linux kernel-space device management driver and a user-space device simulator (C/C++)</b>,
-                using interrupts to verify the behavior of the device simulator. Led solution formulation, architecture
+              <li>Developed a <b>Linux kernel-space device management driver and a user-space device simulator
+                  (C/C++)</b>,
+                using interrupts to verify the behaviors and states of the device simulator. Led solution formulation,
+                architecture
                 design, module development, and integration testing. Ensured stable operation of the driver on
                 next-generation server CPUs (GNR).</li>
-              <li><b>Optimized data-parallel algorithms for Intel's high-performance GPU</b> architecture using oneAPI,
-                rewriting portions of the parallel algorithms with SYCL (C++). Achieved a 5 to 10-fold reduction in
-                runtime for previously cross-platform parallel algorithms on PVC GPUs. Based on the assembly code of the
-                parallel algorithms, <b>proposed effective improvements for the next-generation PVC GPU compiler</b>.</li>
+              <li><b>Optimized data-parallel algorithms for Intel's high performance GPU</b> architecture using oneAPI,
+                rewrote critical sections of the parallel algorithms with SYCL (C++) to ensure low-latency,
+                high-throughput execution, achieving a 5-10x reduction in
+                runtime compared to previous cross-platform parallel algorithms on PVC GPUs. Analyzed assembly code of
+                parallel algorithms to propose impactful enhancements for the next-generation PVC GPU compiler, driving
+                further optimization and efficiency.</b>
+              </li>
               <li>Responsible for functional testing of BIOS architecture and RAS modules. Designed test cases for BIOS
                 architecture upgrades targeting next-next-generation CPUs (DMR), using the Simics simulation platform to
                 cover both software simulation and hardware integration environments.</li>
@@ -440,11 +462,13 @@
 
             <ul class="list-disc px-4">
               <li>Contributed to the development of the <b>Cloud Xiaowei Open Platform and voice assistant microservice
-                modules</b>, utilizing the <b>trpc-go framework</b> for service communication. Developed protocol integrations for
+                  modules</b>, utilizing the <b>trpc-go framework</b> for service communication. Developed protocol
+                integrations for
                 speech recognition, semantic parsing, and speech synthesis modules. Additionally, managed Redis data
                 migration and cluster deployment.
               </li>
-              <li><b>Refactored the sports open capability module from C++ to Go services</b>. Spearheaded the project for
+              <li><b>Refactored the sports open capability module from C++ to Go services</b>. Spearheaded the project
+                for
                 visually impaired programmers, coordinating with company representatives to provide Python cloud
                 development tutorials on the open platform, while gathering feedback on accessibility support for the
                 Cloud Xiaowei Open Platform.</li>
@@ -469,10 +493,12 @@
             <ul class="list-disc px-4">
               <li>Developed a <b>lightweight JavaScript compilation engine backend for the Taobao app</b>, focusing on
                 optimizing performance. Led the development of instruction bytecode and JIT compilation modules, driving
-                improvements in execution speed and resource efficiency, <b>achieving a 10% increase in execution speed and
-                enhancing resource efficiency by 7%</b>.
+                improvements in execution speed and resource efficiency, <b>achieving a 10% increase in execution speed
+                  and
+                  enhancing resource efficiency by 7%</b>.
               </li>
-              <li>Developed the <b>file clean-up module for online bypass repair using Java</b>, overseeing the processing of
+              <li>Developed the <b>file clean-up module for online bypass repair using Java</b>, overseeing the
+                processing of
                 handheld local and platform-delivered files in real-time, aligning with dynamic business push data to
                 achieve seamless hot repairs, resulting in a 15% improvement in repair response times.</li>
             </ul>
@@ -540,10 +566,10 @@
               <span class="text-xs">Flask</span>
             </label>
             <label
-            class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
-            <img class="size-4 sm:size-5" src="./assets/fastapi.svg" alt />
-            <span class="text-xs">FastAPI</span>
-          </label>
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
+              <img class="size-4 sm:size-5" src="./assets/fastapi.svg" alt />
+              <span class="text-xs">FastAPI</span>
+            </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
               <img class="size-4 sm:size-5" src="./assets/redis.svg" alt />
@@ -558,6 +584,11 @@
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
               <img class="size-4 sm:size-5" src="./assets/mongodb.svg" alt />
               <span class="text-xs">MongoDB</span>
+            </label>
+            <label
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
+              <img class="size-4 sm:size-5" src="./assets/restapi.svg" alt />
+              <span class="text-xs">REST APIs</span>
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
@@ -633,13 +664,18 @@
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
+              <img class="size-4 sm:size-5" src="./assets/mysql.svg" alt />
+              <span class="text-xs">MySQL</span>
+            </label>
+            <label
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
               <img class="size-4 sm:size-5" src="./assets/mybatis.svg" alt />
               <span class="text-xs">Mybatis</span>
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
-              <img class="size-4 sm:size-5" src="./assets/mysql.svg" alt />
-              <span class="text-xs">MySQL</span>
+              <img class="size-4 sm:size-5" src="./assets/restapi.svg" alt />
+              <span class="text-xs">REST APIs</span>
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
@@ -708,13 +744,18 @@
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
-              <img class="size-4 sm:size-5" src="./assets/mybatis.svg" alt />
-              <span class="text-xs">Mybatis</span>
+              <img class="size-4 sm:size-5" src="./assets/mysql.svg" alt />
+              <span class="text-xs">MySQL</span>
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
-              <img class="size-4 sm:size-5" src="./assets/mysql.svg" alt />
-              <span class="text-xs">MySQL</span>
+              <img class="size-4 sm:size-5" src="./assets/restapi.svg" alt />
+              <span class="text-xs">REST APIs</span>
+            </label>
+            <label
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
+              <img class="size-4 sm:size-5" src="./assets/mybatis.svg" alt />
+              <span class="text-xs">Mybatis</span>
             </label>
             <label
               class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full">
